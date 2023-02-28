@@ -89,7 +89,13 @@ li{
  }
 
  .column1{
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: lighter;
+ }
+
+ .column2{
+    font-size: 10px;
+    font-weight: lighter;
  }
 
  .first-article-header{
@@ -110,6 +116,9 @@ li{
  .sidebar{
     width: 25%;
     height: 50vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
  }
 
  .wrapper{
