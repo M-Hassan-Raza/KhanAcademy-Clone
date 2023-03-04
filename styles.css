@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif;
+    
 }
 
 html{
     scroll-behavior: smooth;
+    background-color: #F7F8FA;
+}
+
+select{
+    padding: 0.3em 0.3em;
 }
 
 .header{
@@ -21,13 +27,17 @@ html{
     top:0;
 }
 
+.header :hover, .left :hover, .center :hover, .right :hover{
+    background-color: #F7F8FA;
+    color: #1865F2;
+}
+
 a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
 a{
     text-decoration: none;
-    font-size: 20px;
 }
 
 li{
@@ -57,7 +67,7 @@ li{
 
 .below-header{
     background-color: #0B2149;
-    margin-top: 0.5px;
+    margin-top: 0.4px;
     color: white;
     padding: 60px;
 }
@@ -98,7 +108,7 @@ li{
     font-weight: lighter;
  }
 
- .first-article-header{
+ .article-header{
     display: flex;
     padding: 10px;
     justify-content: flex-start;
@@ -115,10 +125,12 @@ li{
 
  .sidebar{
     width: 25%;
-    height: 50vh;
+    height: 25vh;
+    min-height: 400px;
+    overflow: auto;
     position: -webkit-sticky;
     position: sticky;
-    top: 5%;
+    top: 10%;
  }
 
  .wrapper{
@@ -129,3 +141,93 @@ li{
  .main{
     width: 60%;
  }
+
+ footer{
+    background-color: #0B2149;
+    color: white;
+    font-size: 14px;
+ }
+
+footer a:hover {
+    border-bottom: 0.8px solid grey;
+ }
+
+ .first-footer-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    row-gap: 35px;
+ }
+
+ .middle-footer-section{
+    padding-left: 100px;
+ }
+ .countries{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    align-items: center;
+    
+ }
+
+ .USA, .INDIA, .MEXICO, .BRAZIL{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+ }
+
+ .apps{
+    padding-top: 20px;;
+ }
+
+ .about{
+    padding: 5px;
+ }
+
+ .links{
+    
+ }
+
+ .sticky-heading{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+ }
+
+ .last-footer-section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left-footer{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.right-footer{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-footer img:hover{
+    filter: brightness(150%);
+}
+
+.introduction{
+    color: #8295BA;
+}
+
+.copyright{
+    color: #8295BA;
+}
+
+.articles a{
+    font-size: 14px;
+}
